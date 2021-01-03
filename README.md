@@ -101,7 +101,7 @@ sprinkleEmojis();
 </table>
 
 Example using custom options:
-```javascript
+```js
 sprinkleEmojis({ emoji: '🎉', count: 50, fade: 10, fontSize: 10 });
 ```
 
@@ -110,3 +110,27 @@ sprinkleEmojis({ emoji: '🎉', count: 50, fade: 10, fontSize: 10 });
 If more control over styling is needed, the following classes pertain to each element:
 - `emoji-sprinkle-container`: the container holding all of the emojis, which is removed after the max fade duration is met
 - `emoji-sprinkle`: each individual emoji
+
+## Advanced Usage
+
+### SSR
+
+If you are using SSR, you'll want to use the `window` version of the package instead. So for instance, if you are using Gatsby, you'll want to put this in your `gatsby-browser.js`:
+
+```js
+import 'emoji-sprinkle/window';
+```
+
+And then you can use it wherever you need to like this:
+
+```js
+window.EmojiSprinkle.sprinkleEmojis();
+```
+
+If you are still ending up with errors, it's worth checking if the `window` exists first, like this:
+
+```js
+if (typeof window !== 'undefined') {
+  window.EmojiSprinkle.sprinkleEmojis();
+}
+```
