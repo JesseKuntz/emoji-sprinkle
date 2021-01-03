@@ -31,7 +31,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.0",
     "jest": "^26.6.3",
+    "jest-coverage-badges": "^1.1.2",
     "prettier": "^2.2.1",
+    "semantic-release": "^17.3.1",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
   },
@@ -50,7 +52,10 @@
       "json-summary"
     ]
   },
-  "dependencies": {
-    "jest-coverage-badges": "^1.1.2"
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
   }
 }
