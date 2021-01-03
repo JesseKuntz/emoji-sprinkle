@@ -1,5 +1,6 @@
 # emoji-sprinkle
 
+![](https://img.shields.io/npm/v/emoji-sprinkle)
 ![](./badges/badge-branches.svg)
 ![](./badges/badge-functions.svg)
 ![](./badges/badge-lines.svg)
