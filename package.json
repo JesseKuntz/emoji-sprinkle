@@ -4,9 +4,11 @@
   "description": "Add some spice to your page by sprinkling emojis on it!",
   "main": "dist/main.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest && npm run lint",
     "test:badges": "npm run test && jest-coverage-badges output ./badges",
-    "build": "webpack"
+    "build": "webpack",
+    "semantic-release": "semantic-release",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
