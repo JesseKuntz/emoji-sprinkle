@@ -1,15 +1,25 @@
 # emoji-sprinkle
 
 ![](https://img.shields.io/npm/v/emoji-sprinkle)
+
+![](https://badgen.net/bundlephobia/min/emoji-sprinkle) ![](https://badgen.net/bundlephobia/minzip/emoji-sprinkle)
+
 ![](./badges/badge-branches.svg)
 ![](./badges/badge-functions.svg)
 ![](./badges/badge-lines.svg)
 ![](./badges/badge-statements.svg)
+
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/JesseKuntz/emoji-sprinkle/graphs/commit-activity)
 
-I wanted to be able to sprinkle emojis across a web page and then let them fade out "randomly" so I made this package so that everyone can have that simple joy.
+I wanted to be able to sprinkle emojis across a web page and then let them fade out "randomly" so I made this package so that everyone can have that simple joy. [Test it out](https://jessekuntz.github.io/?project=emoji-sprinkle).
 
 ![](./emoji-sprinkle.gif)
+
+## Install
+
+```shell
+npm i emoji-sprinkle
+```
 
 ## Usage
 
@@ -111,7 +121,7 @@ If more control over styling is needed, the following classes pertain to each el
 - `emoji-sprinkle-container`: the container holding all of the emojis, which is removed after the max fade duration is met
 - `emoji-sprinkle`: each individual emoji
 
-## Advanced Usage
+## Additional Usage Instructions
 
 ### SSR
 
@@ -133,4 +143,18 @@ If you are still ending up with errors, it's worth checking if the `window` exis
 if (typeof window !== 'undefined') {
   window.EmojiSprinkle.sprinkleEmojis();
 }
+```
+
+### HTML
+
+```html
+<script src='https://unpkg.com/emoji-sprinkle@^<MAJOR-VERSION>/dist/window.js'></script>
+```
+
+Make sure to replace `<MAJOR-VERSION>` with the desired major version, like `1`.
+
+Then you can use it like this:
+
+```js
+window.EmojiSprinkle.sprinkleEmojis();
 ```

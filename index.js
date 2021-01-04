@@ -82,6 +82,7 @@ function sprinkleEmojis({
     element.style.left = `${x}px`;
     element.style.top = `${y}px`;
     element.style.animation = `emoji-sprinkle-fade ${fadeValue}s forwards`;
+    element.style.cursor = 'default';
     element.classList.add('emoji-sprinkle');
 
     container.appendChild(element);
