@@ -41,7 +41,7 @@ function addFadeAnimation() {
 }
 
 function sprinkleEmojis({
-  emoji = '🐢',
+  emoji = '😸',
   count = 100,
   fade = 2,
   fontSize = 42,
