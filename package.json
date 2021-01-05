@@ -8,7 +8,7 @@
     "test:badges": "npm run test && jest-coverage-badges output ./badges",
     "build": "webpack",
     "semantic-release": "semantic-release",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "repository": {
     "type": "git",
