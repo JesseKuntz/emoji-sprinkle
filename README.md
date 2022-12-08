@@ -1,17 +1,17 @@
-# emoji-sprinkle
+<h1 align="center">
+  emoji-sprinkle
+</h1>
 
 ![](https://img.shields.io/npm/v/emoji-sprinkle)
-
-![](https://badgen.net/bundlephobia/min/emoji-sprinkle) ![](https://badgen.net/bundlephobia/minzip/emoji-sprinkle)
 
 ![](./badges/badge-branches.svg)
 ![](./badges/badge-functions.svg)
 ![](./badges/badge-lines.svg)
 ![](./badges/badge-statements.svg)
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/JesseKuntz/emoji-sprinkle/graphs/commit-activity)
+I wanted to be able to sprinkle emojis across a web page and then let them fade out "randomly" so I made this package so that everyone can have that simple joy.
 
-I wanted to be able to sprinkle emojis across a web page and then let them fade out "randomly" so I made this package so that everyone can have that simple joy. [Test it out](https://jessekuntz.github.io/?project=emoji-sprinkle).
+### [👉 Test It Out 👈](https://jessekuntz.github.io/?project=emoji-sprinkle)
 
 ![](./emoji-sprinkle.gif)
 
