@@ -40,10 +40,10 @@ describe('sprinkleEmojis', () => {
   describe('when no values are passed in', () => {
     beforeEach(() => sprinkleEmojis());
 
-    test('😸 emoji is used', () => {
+    test('🌲 emoji is used', () => {
       const emoji = document.querySelector('.emoji-sprinkle');
 
-      expect(emoji.innerHTML).toBe('😸');
+      expect(emoji.innerHTML).toBe('🌲');
     });
 
     test('adds 100 emojis to the DOM', () => {
