@@ -11,7 +11,7 @@
 
 I wanted to be able to sprinkle emojis across a web page and then let them fade out "randomly" so I made this package so that everyone can have that simple joy.
 
-### [👉 Test It Out 👈](https://jessekuntz.github.io/?project=emoji-sprinkle)
+### [👉 Test It Out 👈](https://jessekuntz.github.io/emoji-sprinkle.html)
 
 ![](./emoji-sprinkle.gif)
 
