@@ -62,7 +62,7 @@ sprinkleEmojis();
         <code>string</code>
       </td>
       <td>
-        🌲
+        🧁
       </td>
     </tr>
     <tr>
