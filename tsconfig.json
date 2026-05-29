@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "lib": ["ES6", "DOM"],
+    "strict": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules", "dist"]
+}

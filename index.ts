@@ -1,9 +1,24 @@
-function getScrollbarWidth() {
+declare global {
+  interface Window {
+    fadeAnimationSet?: boolean;
+  }
+}
+
+export interface SprinkleOptions {
+  emoji?: string;
+  count?: number;
+  fade?: number;
+  fontSize?: number;
+}
+
+function getScrollbarWidth(): number {
   const outer = document.createElement('div');
 
   outer.style.visibility = 'hidden';
   outer.style.overflow = 'scroll';
-  outer.style.msOverflowStyle = 'scrollbar';
+  (
+    outer.style as CSSStyleDeclaration & { msOverflowStyle: string }
+  ).msOverflowStyle = 'scrollbar';
 
   document.body.appendChild(outer);
 
@@ -13,18 +28,18 @@ function getScrollbarWidth() {
 
   const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
 
-  outer.parentNode.removeChild(outer);
+  outer.parentNode!.removeChild(outer);
 
   return scrollbarWidth;
 }
 
-function getPadding(emoji, fontSize) {
+function getPadding(emoji: string, fontSize: number): { x: number; y: number } {
   const element = document.createElement('div');
 
   element.innerHTML = emoji;
   element.style.fontSize = `${fontSize}px`;
   element.style.position = 'absolute';
-  element.style.opacity = 0;
+  element.style.opacity = '0';
 
   document.body.appendChild(element);
 
@@ -38,7 +53,7 @@ function getPadding(emoji, fontSize) {
   return padding;
 }
 
-function addFadeAnimation() {
+function addFadeAnimation(): void {
   const style = document.createElement('style');
   const keyFrames =
     '@keyframes emoji-sprinkle-fade { 0%,100% { opacity: 0 } 50% { opacity: 1 } }';
@@ -52,7 +67,7 @@ function sprinkleEmojis({
   count = 100,
   fade = 2,
   fontSize = 42,
-} = {}) {
+}: SprinkleOptions = {}): void {
   if (!window.fadeAnimationSet) {
     addFadeAnimation();
   }
